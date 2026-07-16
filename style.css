@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(3, 0, 16);
+    
+}
+.stars {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.stars span {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.navigation-links {
+    display: flex;
+    gap: 30px;
+}
+.navigation-links a {
+    text-decoration: none;
+    color: #e6efe6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navigation-links a:hover {
+    color: #2ee574;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    text-decoration: none;
+    color: #e6efe6;
+    font-size: 28px;
+    font-weight: 700;
+    transition:0.3s ease;
+}
+.logo span {
+    color: #2ee574;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
+.logo-container p {
+    margin: 0;
+    margin-top: 1px;
+    font-size: 11px;
+    color: #839298;
+    letter-spacing: 1px;
+    
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #e6efe6;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 16px;
+    color: #839298;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.hero-buttons button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.primary-button {
+    background-color: #4CAF50;
+    color: #e6efe6;
+    border: none;
+}
+.primary-button:hover {
+    background-color: #43A047;
+}
+.secondary-button {
+    background-color: transparent;
+    color: #e6efe6;
+    border: 2px solid #94d796;
+}
+.secondary-button:hover {
+    background-color: #4CAF50;
+}
+.earth-container {
+   width: 555px;
+    height: 555px;
+    max-width: 90vw;
+    max-height: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
