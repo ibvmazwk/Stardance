@@ -22,17 +22,17 @@ nav {
     align-items: center;
     padding: 20px 60px;
 }
-.navigation-links {
+.navigation-link {
     display: flex;
     gap: 30px;
 }
-.navigation-links a {
+.navigation-link a {
     text-decoration: none;
     color: #e6efe6;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-.navigation-links a:hover {
+.navigation-link a:hover {
     color: #2ee574;
 }
 .logo-container {
@@ -111,8 +111,8 @@ nav {
 }
 .secondary-button {
     background-color: transparent;
-    color: #4CAF50;
-    border: 2px solid #0f1b14;
+    color: #e6efe6;
+    border: 2px solid #3f7a57;
 }
 .secondary-button:hover {
     background-color: #4CAF50;
