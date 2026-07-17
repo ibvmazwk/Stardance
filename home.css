@@ -91,13 +91,15 @@ nav {
     display: flex;
     gap: 20px;
 }
-.hero-buttons button {
+.hero-buttons a {
+    display: inline-block;
     padding: 15px 30px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 .primary-button {
     background-color: #4CAF50;
@@ -109,8 +111,8 @@ nav {
 }
 .secondary-button {
     background-color: transparent;
-    color: #e6efe6;
-    border: 2px solid #94d796;
+    color: #4CAF50;
+    border: 2px solid #0f1b14;
 }
 .secondary-button:hover {
     background-color: #4CAF50;
